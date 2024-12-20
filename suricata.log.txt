@@ -1,0 +1,38 @@
+[2357 - Suricata-Main] 2024-12-16 10:23:37 Notice: suricata: This is Suricata version 7.0.7 RELEASE running in USER mode
+[2357 - Suricata-Main] 2024-12-16 10:23:37 Info: cpu: CPUs/cores online: 2
+[2357 - Suricata-Main] 2024-12-16 10:23:37 Info: suricata: Setting engine mode to IDS mode by default
+[2357 - Suricata-Main] 2024-12-16 10:23:37 Info: exception-policy: master exception-policy set to: auto
+[2357 - Suricata-Main] 2024-12-16 10:23:38 Info: logopenfile: fast output device (regular) initialized: fast.log
+[2357 - Suricata-Main] 2024-12-16 10:23:38 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[2357 - Suricata-Main] 2024-12-16 10:23:38 Info: logopenfile: stats output device (regular) initialized: stats.log
+[2357 - Suricata-Main] 2024-12-16 10:23:47 Info: detect: 2 rule files processed. 41043 rules successfully loaded, 0 rules failed, 0
+[2357 - Suricata-Main] 2024-12-16 10:23:47 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[2357 - Suricata-Main] 2024-12-16 10:23:47 Info: detect: 41046 signatures processed. 1182 are IP-only rules, 4292 are inspecting packet payload, 35363 inspect application layer, 108 are decoder event only
+[2357 - Suricata-Main] 2024-12-16 10:23:56 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[2502 - RX#01] 2024-12-16 10:23:56 Info: pcap: Starting file run for /home/menna/Desktop/malwareexecution.pcapng
+[2502 - RX#01] 2024-12-16 10:23:56 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[2357 - Suricata-Main] 2024-12-16 10:23:56 Notice: threads: Threads created -> RX: 1 W: 2 FM: 1 FR: 1   Engine started.
+[2502 - RX#01] 2024-12-16 10:23:56 Info: pcap: pcap file /home/menna/Desktop/malwareexecution.pcapng end of file reached (pcap err code 0)
+[2357 - Suricata-Main] 2024-12-16 10:23:56 Notice: suricata: Signal Received.  Stopping engine.
+[2357 - Suricata-Main] 2024-12-16 10:23:56 Info: suricata: time elapsed 0.084s
+[2502 - RX#01] 2024-12-16 10:23:56 Notice: pcap: read 1 file, 2653 packets, 390987 bytes
+[2357 - Suricata-Main] 2024-12-16 10:23:56 Info: counters: Alerts: 231
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Notice: suricata: This is Suricata version 7.0.7 RELEASE running in USER mode
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: cpu: CPUs/cores online: 2
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: suricata: Setting engine mode to IDS mode by default
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: exception-policy: master exception-policy set to: auto
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: logopenfile: fast output device (regular) initialized: fast.log
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: logopenfile: stats output device (regular) initialized: stats.log
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: detect: 1 rule files processed. 21 rules successfully loaded, 0 rules failed, 0
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: detect: 21 signatures processed. 3 are IP-only rules, 9 are inspecting packet payload, 9 inspect application layer, 0 are decoder event only
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[3900 - RX#01] 2024-12-16 10:26:38 Info: pcap: Starting file run for /home/menna/Desktop/malwareexecution.pcapng
+[3900 - RX#01] 2024-12-16 10:26:38 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Notice: threads: Threads created -> RX: 1 W: 2 FM: 1 FR: 1   Engine started.
+[3900 - RX#01] 2024-12-16 10:26:38 Info: pcap: pcap file /home/menna/Desktop/malwareexecution.pcapng end of file reached (pcap err code 0)
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Notice: suricata: Signal Received.  Stopping engine.
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: suricata: time elapsed 0.032s
+[3900 - RX#01] 2024-12-16 10:26:38 Notice: pcap: read 1 file, 2653 packets, 390987 bytes
+[3899 - Suricata-Main] 2024-12-16 10:26:38 Info: counters: Alerts: 124
