@@ -1,0 +1,9 @@
+cd /home/kali/Downloads/vo;atility3
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pslist
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.malfind
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pstree --pid 1328
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pstree --pid 752
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pstree --pid 1260
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pstree --pid 2024
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.pstree --pid 472
+sude python3 vol-py -f '/home/kali/Desktop/mendump.mem' windows.netscan
