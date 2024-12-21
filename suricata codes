@@ -1,0 +1,6 @@
+cd proactive 
+rm -r * 
+cp /home/kali/Desktop/suricata/* .                                                                                                                                                                                  */
+sudo nano /var/lib/suricata/rules/zeus.rules
+sudo nano /etc/suricata/suricata.yaml
+sudo suricata -c /etc/suricata/suricata.yanl - /home/kali/Desktop/zoz-pcapng -1 /home/kali/Desktop/suricata
