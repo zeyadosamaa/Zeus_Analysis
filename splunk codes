@@ -1,0 +1,56 @@
+cd proactive 
+rm -r * 
+cp /home/kali/Desktop/suricata/* .                                                                                                                                                                            */
+nano /opt/splunk/etc/system/local/inputs.conf
+
+[monitor:///home/kali/Desktop/suricata/eve.json]
+index = proactive
+sourcetype = _json
+
+[monitor:///home/kali/Desktop/suricata/"*" .log]
+index = proactive
+sourcetype = suricata_logs
+
+[monitor:///home/kali/Desktop/suricata/systemlogs.json]
+index = proactive
+sourcetype = _json
+
+
+index=proactive sourcetype=_json direction=to_server 
+| stats count by src_ip dest_ip dest_port
+| where count > 50
+| sort - count
+| rename src_ip AS "Source IP", dest_ip AS "Destination IP", dest_port AS "Destination Port", count AS "Connections Count"
+
+
+
+
+
+index=proactive sourcetype=_json direction=to_server
+| where dest_port != 80 AND dest_port != 443 AND dest_port != 53
+| stats count by src_ip dest_ip dest_port
+| sort - count
+| rename src_ip AS "Source IP", dest_ip AS "Destination IP", dest_port AS "Destination Port", count AS "Count"
+
+
+
+
+
+(index=proactive sourcetype=_json event_type=alert)
+OR (index=proactive sourcetype=system_logs event_type="file_change" OR event_type="process_start")
+| transaction src_ip maxpause=5m
+| table timestamp src_ip dest_ip signature event_type file_path process_name
+| sort timestamp
+
+
+
+index=proactive sourcetype=_json event_type=alert
+| stats count by src_ip
+| sort - count
+| rename src_ip AS "Source IP", count AS "Alert Count"
+
+
+
+
+index=proactive sourcetype=_json direction=to_server
+| timechart span=5m count by dest_port
